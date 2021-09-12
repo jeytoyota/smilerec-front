@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+          <h3 class="mt-2">Exclusão de Cadastro</h3>
+        <div class="card-header">Deseja apagar o cadastro do tutor?</div>
+        <div class="card-body">
+          <h5 class="card-title">Id: {{tutor.cdCadastro}}</h5>
+          <h5 class="card-title">Nome: {{tutor.nmPessoa}}</h5>
+          <h5 class="card-title">CPF: {{tutor.dsLogin}}</h5>
+          <h5 class="card-title">RG: {{tutor.dsSenha}}</h5>
+         
+          
+  
+        </div>
+        <button type="button" class="btn btn-danger" (click)='apagar()'>Apagar</button>
+        <button type="button" class="btn btn-warning mt-3 mb-3" [routerLink]="['/cadastro']">Cancelar</button>
+      </div>
+    </div>
+  </div>
