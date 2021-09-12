@@ -14,23 +14,23 @@ export class TutorService {
   ) { }
 
    getAllTutores(): Observable<Tutor[]>{
-    return this.http.get<Tutor[]>(`${environment.uri}/tutor`)
+    return this.http.get<Tutor[]>(`${environment.uri}/cadastro/tutor`)
   }
 
   getTutor(id: number): Observable<Tutor>{
-    return this.http.get<Tutor>(`${environment.uri}/tutor/${id}`)
+    return this.http.get<Tutor>(`${environment.uri}/cadastro/tutor/${id}`)
   }
 
   putTutor(tutor: Tutor): Observable<Tutor>{
-    return this.http.put<Tutor>(`${environment.uri}/tutor`, tutor)
+    return this.http.put<Tutor>(`${environment.uri}/cadastro/tutor`, tutor)
   }
 
   postTutor(tutor: Tutor){
-    return this.http.post<Tutor>(`${environment.uri}/tutor`, tutor)
+    return this.http.post<Tutor>(`${environment.uri}/cadastro/tutor`, tutor)
   }
 
   deleteTutor(id:number): Observable<Tutor>{
-    return this.http.delete<Tutor>(`${environment.uri}/tutor/${id}`)
+    return this.http.delete<Tutor>(`${environment.uri}/cadastro/tutor/${id}`)
   }
 
 

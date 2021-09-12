@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  uri: 'http://localhost:8080/cadastro'
+  uri: 'https://smilerec.herokuapp.com'
 };
